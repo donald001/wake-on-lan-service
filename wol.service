@@ -1,0 +1,10 @@
+[Unit]
+Description=Wake on lan back end service
+After=network.target
+
+[Service]
+ExecStart=/opt/wol/wol-proxy
+
+
+[Install]
+WantedBy=multi-user.target 

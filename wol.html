@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Wake On Lan Service</title>
+</head>
+
+<body>
+    <button id="gmkBtn">GMK</button>
+    <script>
+        gmkBtn = document.getElementById("gmkBtn");
+        gmkBtn.onclick = function () {
+            fetch("/wake-on-lan?mac=84-47-09-31-F2-09", { method: "GET", credentials: "same-origin" })
+                .then(r => r.text()).then(d=>alert(d))
+        }
+    </script>
+</body>
+
+</html>

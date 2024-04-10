@@ -1,0 +1,2 @@
+###
+GET http://localhost:8009/wake-on-lan?mac=84-47-09-31-F2-09
